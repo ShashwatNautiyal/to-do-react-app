@@ -1,0 +1,25 @@
+.login__heading {
+	font-size: 2.5rem;
+	margin-top: 3rem;
+}
+
+.login__btn {
+	display: flex;
+	margin-top: auto;
+	margin-bottom: 3rem;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	background: #0000008a;
+	cursor: pointer;
+	color: #ffffff;
+	border-radius: 28px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	border: none;
+}
+
+.login__btn img {
+	width: 40px;
+	margin-right: 5px;
+}

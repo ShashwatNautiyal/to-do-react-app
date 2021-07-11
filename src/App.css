@@ -13,9 +13,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(./mesh-gradient.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: linear-gradient(to bottom right, #5484ffd5, #ff221ee7);
 	color: #000000;
 }
 
@@ -23,12 +21,27 @@
 	background-color: #1b171798;
 	box-shadow: 0px 1px 5px #000000;
 	width: 100%;
-	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	border-radius: 30px 30px 0 0;
-	padding: 1rem;
+	padding: 1rem 1.5rem;
 	font-size: 2rem;
 	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.heading__btn {
+	background-color: #00000085;
+	color: #ffffff;
+	border: none;
+	padding: 0.5rem 0.8rem;
+	outline: none;
+	border-radius: 18px;
+	margin-left: auto;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 .card {
@@ -71,7 +84,7 @@
 }
 
 .task-list {
-	padding: 1.5rem;
+	padding: 1rem;
 	width: 100%;
 	display: flex;
 	flex-direction: column;

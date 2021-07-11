@@ -4,7 +4,9 @@ import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Todo = (props) => {
 	const checkTask = (e) => {
-		db.collection('todos')
+		db.collection('users')
+			.doc(props?.userId)
+			.collection('todos')
 			.doc(props.todo.id)
 			.set({ checked: !props.todo.checked }, { merge: true });
 	};
@@ -16,8 +18,14 @@ const Todo = (props) => {
 			</div>
 			<div
 				className="task"
-				fire
-				onClick={(event) => db.collection('todos').doc(props.todo.id).delete()}
+				onClick={(event) =>
+					db
+						.collection('users')
+						.doc(props?.userId)
+						.collection('todos')
+						.doc(props.todo.id)
+						.delete()
+				}
 			>
 				<FontAwesomeIcon className="icon" icon={faTimes} />
 			</div>
